@@ -4,15 +4,81 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('../img/Grades-bro2.png') no-repeat center center fixed;
+  object-fit: cover;
+}
+
+/* Header */
+.header {
+  background-color: #2b6cb0;
+}
+.header img {
+  height: 80px;
+}
+
+/* Main content should take remaining height */
+main {
+  flex: 1;
+}
+
+/* Text */
 h1 {
   text-align: center;
   margin: 0 auto;
   padding: 60px 20px;
   font-size: 48px;
+  color: #403f3f;
 }
 
 p {
   text-align: center;
   margin: 20px auto;
   font-size: 24px;
+  font-weight: 900;
+  padding: 60px 10px;
+  color: #403f3f;
+}
+
+/* Footer */
+.footer {
+  background-color: #2b6cb0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    padding: 60px 10px;
+  }
+  p {
+    font-size: 28px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    padding: 40px 5px;
+  }
+  p {
+    font-size: 20px;
+    margin-top: 80px;
+  }
 }
